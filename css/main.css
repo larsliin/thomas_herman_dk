@@ -1,57 +1,115 @@
-body, html{
+body, html {
   height: 100%;
 }
 
-body{
-  background-image: url(../images/thomas-portrait-filter-low.jpg);
+body {
+  background-image: url(../images/thomas-herman-feast-1400.jpg);
   background-size: cover;
-  background-position: center 30%;
+  background-position: center 20%;
   background-repeat: no-repeat;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Playfair Display', serif;
   color: #ffffff;
   letter-spacing: 1px;
   overflow: hidden;
 }
 
-a{
+p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 50px;
+  letter-spacing: 8px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media (min-width: 480px) {
+  h2 {
+    font-size: 70px;
+  }
+}
+
+h4 {
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media (min-width: 480px) {
+  h4 {
+    font-size: 20px;
+  }
+}
+
+a {
   color: inherit;
+  transition: color .15s;
 }
 
-a:hover{
-  color: #ddd;
+a:hover {
+  color: #b1d4c9;
 }
 
-.content{
+.content {
   display: flex;
   height: 100%;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
 }
 
-.content__inner{
+.content__inner {
   padding-left: 20px;
   padding-right: 20px;
 }
 
-.logo{
-  width: 100%;
+.content__padding {
+  padding-bottom: 30px;
 }
 
-@media (min-width: 768px) {
-  .logo{
-    width: 400px;
-  } 
+@media (min-width: 480px) {
+  .content__padding {
+    padding-bottom: 50px;
+  }
 }
 
-.text-center{
+.logo {
+  width: 150px;
+}
+
+@media (min-width: 480px) {
+  .logo {
+    width: 150px;
+  }
+}
+
+.m-t-40 {
+  margin-top: 40px;
+}
+
+.m-v-10 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.text-center {
   text-align: center;
 }
 
-.icons{
+.icons {
   margin-top: 30px;
 }
 
-.social__link{
+.social__link {
   display: inline-block;
   margin-left: 10px;
   margin-right: 10px;
